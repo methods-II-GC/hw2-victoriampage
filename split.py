@@ -69,7 +69,9 @@ if __name__ == "__main__":
     parser.add_argument("test", type=str)
 
     # non-optional seeder for randomization
-    parser.add_argument("--seed", type=int, required=True, help="Seed is required.")
+    parser.add_argument(
+        "--seed", type=int, required=True, help="Seed is required."
+    )
 
     # TODO: parse arguments and pass them to `main`.
     main(parser.parse_args())
